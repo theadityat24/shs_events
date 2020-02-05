@@ -60,5 +60,3 @@ exports.getMonthsEvents = async function () {
             event.date.getFullYear() === now.getFullYear()
     );
 }
-
-exports.getMonthsEvents().then(console.log);

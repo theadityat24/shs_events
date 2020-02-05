@@ -10,7 +10,7 @@
     "shs"
   ],
   "author": "Aditya Tiwari",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "node-ical": "^0.10.0",
     "request": "^2.88.0",
