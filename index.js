@@ -3,15 +3,15 @@ const request = require('request-promise-native');
 
 /**
  * Takes in event object given by node-ical returns a cleaned up version without any of the junk like uid and dtime.
- * @param {Object} icalEvent An event object given by node-ical
- * @prop {Date} date 
- * @prop {Boolean} allDay
- * @prop {Date} end
- * @prop {String} summary
- * @prop {String} description
- * @prop {String} category
- * @prop {Number} priority
- * @prop {String} location
+ * @param {Object} icalEvent An event object given by node-ical.
+ * @prop {Date} date The date and, if the event isn't all day, time of the start of the event.
+ * @prop {Boolean} allDay True if the event lasts all day.
+ * @prop {Date} end The date-time of the end of the event.
+ * @prop {String} summary A short description or title of the event.
+ * @prop {String} description A more detailed description of the event than the summary.
+ * @prop {String} category The category, such as Fine Arts or Non-Attendance Days, that the event falls into
+ * @prop {Number} priority How important the event is.
+ * @prop {String} location Where the event is taking place. Undefined if the event takes place all over Stevenson.
  */
 exports.Event = class {
     constructor(icalEvent) {

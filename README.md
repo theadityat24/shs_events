@@ -34,18 +34,17 @@ events.getTodaysEvents().then(console.log);
 Takes in event object given by node-ical returns a cleaned up version without any of the junk like uid and dtime.
 ### Parameters
 
--   `icalEvent` **[Object][7]** An event object given by node-ical
+-   `icalEvent` **[Object][7]** An event object given by node-ical.
 
 ### Properties
 
--   `date` **[Date][8]**
--   `allDay` **[Boolean][9]**
--   `end` **[Date][8]**
--   `summary` **[String][10]**
--   `description` **[String][10]**
--   `category` **[String][10]**
--   `priority` **[Number][11]**
--   `location` **[String][10]**
+-   `date` **[Date][8]** The date and, if the event isn't all day, time of the start of the event.
+-   `allDay` **[Boolean][9]** True if the event lasts all day.
+-   `end` **[Date][8]** The date-time of the end of the event.
+-   `summary` **[String][10]** A short description or title of the event.
+-   `description` **[String][10]** A more detailed description of the event than the summary.
+-   `category` **[String][10]** The category, such as Fine Arts or Non-Attendance Days, that the event falls into-   `priority` **[Number][11]** How important the event is.
+-   `location` **[String][10]** Where the event is taking place. Undefined if the event takes place all over Stevenson.
 
 ## getAllEvents
 
