@@ -16,5 +16,10 @@
     "request": "^2.88.0",
     "request-promise-native": "^1.0.8"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "homepage": "https://github.com/theadityat24/shs_events#README",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theadityat24/shs_events"
+  }
 }
