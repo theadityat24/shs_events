@@ -9,7 +9,7 @@ const request = require('request-promise-native');
  * @prop {Date} end The date-time of the end of the event.
  * @prop {String} summary A short description or title of the event.
  * @prop {String} description A more detailed description of the event than the summary.
- * @prop {String} category The category, such as Fine Arts or Non-Attendance Days, that the event falls into
+ * @prop {String} category The category, such as Fine Arts or Non-Attendance Days, that the event falls into.
  * @prop {Number} priority How important the event is.
  * @prop {String} location Where the event is taking place. Undefined if the event takes place all over Stevenson.
  */
